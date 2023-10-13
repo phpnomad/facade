@@ -1,5 +1,5 @@
 {
-    "name": "phoenix/repository",
+    "name": "phoenix/facade",
     "description": "",
     "type": "library",
     "homepage": "https://github.com/phoenix/core",
@@ -12,16 +12,20 @@
         {
             "type": "vcs",
             "url": "https://github.com/rooted-phoenix/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rooted-phoenix/di.git"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Phoenix\\Core\\": "lib/"
+            "Phoenix\\Facade\\": "lib/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Phoenix\\Core\\Tests\\": "tests/"
+            "Phoenix\\Facade\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -31,7 +35,8 @@
         }
     ],
     "require-dev": {
-        "phoenix/tests": "^0.1.0"
+        "phoenix/tests": "^0.1.0",
+        "phoenix/di": "dev-main"
     },
     "config": {
         "allow-plugins": {
