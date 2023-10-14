@@ -1,8 +1,9 @@
 <?php
 
-namespace Phoenix\Tests\Unit;
+namespace Phoenix\Facade\Tests\Unit;
 
-use Phoenix\Core\Tests\TestCase;
+
+use Phoenix\Facade\Tests\TestCase;
 
 class ValidateCITest extends TestCase
 {

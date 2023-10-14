@@ -63,6 +63,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofphp/php-cs-fixer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phoenix/di" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phoenix/singleton" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phoenix/logger" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

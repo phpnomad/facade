@@ -5,24 +5,16 @@ namespace Phoenix\Facade\Abstracts;
 use Phoenix\Di\Container;
 use Phoenix\Di\Exceptions\DiException;
 use Phoenix\Di\Interfaces\CanSetContainer;
+use Phoenix\Di\Traits\HasSettableContainer;
+use Phoenix\Logger\Facades\Logger;
+use Phoenix\Logger\Interfaces\LoggerStrategy;
 
 /**
  * @template TAbstraction of object
  */
 abstract class Facade implements CanSetContainer
 {
-    protected Container $container;
-
-    /**
-     * @param Container $container
-     * @return $this
-     */
-    public function setContainer(Container $container)
-    {
-        $this->container = $container;
-
-        return $this;
-    }
+    use HasSettableContainer;
 
     /**
      * @return class-string<TAbstraction>
@@ -35,9 +27,16 @@ abstract class Facade implements CanSetContainer
     protected function getContainedInstance()
     {
         try {
-            return $this->container->get($this->abstractInstance());
+            $result = $this->container->get($this->abstractInstance());
         } catch (DiException $e) {
-            //TODO: LOG THIS EXCEPTION.
+            // Avoid using logger facade to prevent infinite loops.
+            $this->container->get(LoggerStrategy::class)->critical(
+                $e->getMessage(),
+                ['container' => $this->container, 'abstract' => $this->abstractInstance()]
+            );
+            throw $e;
         }
+
+        return $result;
     }
 }

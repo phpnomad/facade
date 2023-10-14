@@ -7,7 +7,7 @@ use Phoenix\Facade\Abstracts\Facade;
 interface HasFacades
 {
     /**
-     * @return Facade[]
+     * @return Facade<object>[]
      */
     public function getFacades(): array;
 }
