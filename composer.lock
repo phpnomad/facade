@@ -767,12 +767,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:rooted-phoenix/di.git",
-                "reference": "7e3b55e75b3ad383f1f4f44a0434a73d9c9eda7b"
+                "reference": "b1128b2c78a9d62ccb4d4684625d8396e38f7be8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rooted-phoenix/di/zipball/7e3b55e75b3ad383f1f4f44a0434a73d9c9eda7b",
-                "reference": "7e3b55e75b3ad383f1f4f44a0434a73d9c9eda7b",
+                "url": "https://api.github.com/repos/rooted-phoenix/di/zipball/b1128b2c78a9d62ccb4d4684625d8396e38f7be8",
+                "reference": "b1128b2c78a9d62ccb4d4684625d8396e38f7be8",
                 "shasum": ""
             },
             "require-dev": {
@@ -810,7 +810,7 @@
                 "source": "https://github.com/rooted-phoenix/di/tree/main",
                 "issues": "https://github.com/rooted-phoenix/di/issues"
             },
-            "time": "2023-10-13T11:24:22+00:00"
+            "time": "2023-10-14T21:39:58+00:00"
         },
         {
             "name": "phoenix/logger",
@@ -818,18 +818,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:rooted-phoenix/logger.git",
-                "reference": "b536afc831b1ce97347c0d861f9e573ba24afa67"
+                "reference": "5566aed6de4a0e83786c66fdd3e8556c39b7c240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rooted-phoenix/logger/zipball/b536afc831b1ce97347c0d861f9e573ba24afa67",
-                "reference": "b536afc831b1ce97347c0d861f9e573ba24afa67",
+                "url": "https://api.github.com/repos/rooted-phoenix/logger/zipball/5566aed6de4a0e83786c66fdd3e8556c39b7c240",
+                "reference": "5566aed6de4a0e83786c66fdd3e8556c39b7c240",
                 "shasum": ""
-            },
-            "require": {
-                "phoenix/di": "dev-main",
-                "phoenix/facade": "dev-main",
-                "phoenix/singleton": "dev-main"
             },
             "require-dev": {
                 "phoenix/tests": "^0.1.0"
@@ -865,57 +860,7 @@
                 "source": "https://github.com/rooted-phoenix/logger/tree/main",
                 "issues": "https://github.com/rooted-phoenix/logger/issues"
             },
-            "time": "2023-10-14T19:26:58+00:00"
-        },
-        {
-            "name": "phoenix/singleton",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:rooted-phoenix/singleton.git",
-                "reference": "451fa0dd7631e4bcc01c4e9f5bbbe02cc0cc86b8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rooted-phoenix/singleton/zipball/451fa0dd7631e4bcc01c4e9f5bbbe02cc0cc86b8",
-                "reference": "451fa0dd7631e4bcc01c4e9f5bbbe02cc0cc86b8",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phoenix/tests": "^0.1.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phoenix\\Singleton\\": "lib/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Phoenix\\Singleton\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "php-cs-fixer": [
-                    "php-cs-fixer fix"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alex Standiford",
-                    "email": "alex@standiford.us"
-                }
-            ],
-            "homepage": "https://github.com/phoenix/core",
-            "support": {
-                "source": "https://github.com/rooted-phoenix/singleton/tree/main",
-                "issues": "https://github.com/rooted-phoenix/singleton/issues"
-            },
-            "time": "2023-10-13T12:32:02+00:00"
+            "time": "2023-10-14T21:31:40+00:00"
         },
         {
             "name": "phoenix/tests",

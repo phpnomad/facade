@@ -63,6 +63,8 @@ class FacadeTest extends TestCase
         $this->container->allows('get')->with(LoggerStrategy::class)->andReturn($logger);
         $this->container->allows('get')->with(Facade::class)->andThrow(new DiException('test'));
 
+        $this->expectException(DiException::class);
+        $this->expectExceptionMessage('test');
         $this->callInaccessibleMethod($this->instance, 'getContainedInstance');
     }
 }
