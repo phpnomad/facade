@@ -8,7 +8,6 @@ use Phoenix\Di\Interfaces\CanSetContainer;
 
 /**
  * @template TAbstraction of object
- * @template TInstance of TAbstraction
  */
 abstract class Facade implements CanSetContainer
 {
@@ -31,7 +30,7 @@ abstract class Facade implements CanSetContainer
     abstract protected function abstractInstance(): string;
 
     /**
-     * @return TInstance
+     * @return TAbstraction
      */
     protected function getContainedInstance()
     {
