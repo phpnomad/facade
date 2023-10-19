@@ -24,8 +24,13 @@ abstract class Facade implements CanSetContainer
      */
     protected function getContainedInstance()
     {
+        return $this->getContainerInstance($this->abstractInstance());
+    }
+
+    protected function getContainerInstance(string $instance)
+    {
         try {
-            $result = $this->container->get($this->abstractInstance());
+            $result = $this->container->get($instance);
         } catch (DiException $e) {
             // Try to log something, if the container happens to have it.
             $this->container->get(LoggerStrategy::class)->critical(
