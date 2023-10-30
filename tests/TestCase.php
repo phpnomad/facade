@@ -1,9 +1,9 @@
 <?php
 
-namespace Phoenix\Facade\Tests;
+namespace PHPNomad\Facade\Tests;
 
 
-use Phoenix\Tests\TestCase as CoreTestCase;
+use PHPNomad\Tests\TestCase as CoreTestCase;
 
 class TestCase extends CoreTestCase
 {

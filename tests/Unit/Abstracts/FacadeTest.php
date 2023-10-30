@@ -1,14 +1,14 @@
 <?php
 
-namespace Phoenix\Facade\Tests\Unit\Abstracts;
+namespace PHPNomad\Facade\Tests\Unit\Abstracts;
 
 use Mockery;
-use Phoenix\Di\Container;
-use Phoenix\Di\Exceptions\DiException;
-use Phoenix\Facade\Abstracts\Facade;
-use Phoenix\Facade\Tests\TestCase;
-use Phoenix\Logger\Interfaces\LoggerStrategy;
-use Phoenix\Tests\Traits\WithInaccessibleMethods;
+use PHPNomad\Di\Container;
+use PHPNomad\Di\Exceptions\DiException;
+use PHPNomad\Facade\Abstracts\Facade;
+use PHPNomad\Facade\Tests\TestCase;
+use PHPNomad\Logger\Interfaces\LoggerStrategy;
+use PHPNomad\Tests\Traits\WithInaccessibleMethods;
 use ReflectionException;
 
 class FacadeTest extends TestCase
@@ -37,7 +37,7 @@ class FacadeTest extends TestCase
     }
 
     /**
-     * @covers \Phoenix\Facade\Abstracts\Facade::getContainedInstance()
+     * @covers \PHPNomad\Facade\Abstracts\Facade::getContainedInstance()
      * @return void
      * @throws ReflectionException
      */
@@ -51,7 +51,7 @@ class FacadeTest extends TestCase
     }
 
     /**
-     * @covers \Phoenix\Facade\Abstracts\Facade::getContainedInstance()
+     * @covers \PHPNomad\Facade\Abstracts\Facade::getContainedInstance()
      * @return void
      * @throws ReflectionException
      */

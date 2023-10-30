@@ -1,11 +1,11 @@
 <?php
 
-namespace Phoenix\Facade\Abstracts;
+namespace PHPNomad\Facade\Abstracts;
 
-use Phoenix\Di\Exceptions\DiException;
-use Phoenix\Di\Interfaces\CanSetContainer;
-use Phoenix\Di\Traits\HasSettableContainer;
-use Phoenix\Logger\Interfaces\LoggerStrategy;
+use PHPNomad\Di\Exceptions\DiException;
+use PHPNomad\Di\Interfaces\CanSetContainer;
+use PHPNomad\Di\Traits\HasSettableContainer;
+use PHPNomad\Logger\Interfaces\LoggerStrategy;
 
 /**
  * @template TAbstraction of object

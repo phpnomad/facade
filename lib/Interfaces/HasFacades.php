@@ -1,8 +1,8 @@
 <?php
 
-namespace Phoenix\Facade\Interfaces;
+namespace PHPNomad\Facade\Interfaces;
 
-use Phoenix\Facade\Abstracts\Facade;
+use PHPNomad\Facade\Abstracts\Facade;
 
 interface HasFacades
 {
