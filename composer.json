@@ -27,8 +27,8 @@
     ],
     "require-dev": {
         "phpnomad/tests": "^0.1.0",
-        "phpnomad/di": "dev-main",
-        "phpnomad/logger": "dev-main"
+        "phpnomad/di": "^1.0",
+        "phpnomad/logger": "^1.0"
     },
     "config": {
         "allow-plugins": {
