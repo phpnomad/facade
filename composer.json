@@ -9,24 +9,6 @@
         "php-cs-fixer": "php-cs-fixer fix"
     },
     "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:phpnomad/tests.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:phpnomad/logger.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:phpnomad/singleton.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:phpnomad/di.git"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "PHPNomad\\Facade\\": "lib/"
@@ -45,8 +27,8 @@
     ],
     "require-dev": {
         "phpnomad/tests": "^0.1.0",
-        "phpnomad/di": "dev-main",
-        "phpnomad/logger": "dev-main"
+        "phpnomad/di": "^1.0",
+        "phpnomad/logger": "^1.0"
     },
     "config": {
         "allow-plugins": {
