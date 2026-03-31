@@ -3,7 +3,7 @@
 namespace PHPNomad\Facade\Tests\Unit\Abstracts;
 
 use Mockery;
-use PHPNomad\Di\Container;
+use PHPNomad\Di\Interfaces\InstanceProvider;
 use PHPNomad\Di\Exceptions\DiException;
 use PHPNomad\Facade\Abstracts\Facade;
 use PHPNomad\Facade\Tests\TestCase;
@@ -16,7 +16,7 @@ class FacadeTest extends TestCase
     use WithInaccessibleMethods;
 
     /**
-     * @var Container&Mockery\MockInterface
+     * @var InstanceProvider&Mockery\MockInterface
      */
     protected $container;
 
@@ -28,7 +28,7 @@ class FacadeTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->container = Mockery::mock(Container::class);
+        $this->container = Mockery::mock(InstanceProvider::class);
 
         $this->instance = Mockery::mock(Facade::class)->makePartial()->shouldAllowMockingProtectedMethods();
         $this->instance->setContainer($this->container);

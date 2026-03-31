@@ -28,7 +28,7 @@
     ],
     "require-dev": {
         "phpnomad/tests": "^0.1.0 || ^0.3.0",
-        "phpnomad/di": "^1.0",
+        "phpnomad/di": "^2.0",
         "phpnomad/logger": "^1.0"
     },
     "config": {
