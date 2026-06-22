@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "412455c2597fc5ccd7129a22e2accb15",
+    "content-hash": "0dbb29bfe4c669a301e7f169e9d05a31",
     "packages": [],
     "packages-dev": [
         {
@@ -999,23 +999,23 @@
         },
         {
             "name": "phpnomad/logger",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpnomad/logger.git",
-                "reference": "241e8e4caef8aceb230813df15f50857ff7d62d2"
+                "reference": "a92b375bf682d8a0db318b8d55a088bb29463e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpnomad/logger/zipball/241e8e4caef8aceb230813df15f50857ff7d62d2",
-                "reference": "241e8e4caef8aceb230813df15f50857ff7d62d2",
+                "url": "https://api.github.com/repos/phpnomad/logger/zipball/a92b375bf682d8a0db318b8d55a088bb29463e88",
+                "reference": "a92b375bf682d8a0db318b8d55a088bb29463e88",
                 "shasum": ""
             },
             "require-dev": {
                 "phpnomad/di": "^1.0",
                 "phpnomad/facade": "^1.0",
                 "phpnomad/singleton": "^1.0",
-                "phpnomad/tests": "^0.1.0"
+                "phpnomad/tests": "^0.1.0 || ^0.3.0"
             },
             "type": "library",
             "autoload": {
@@ -1036,9 +1036,9 @@
             "homepage": "https://github.com/phpnomad/core",
             "support": {
                 "issues": "https://github.com/phpnomad/logger/issues",
-                "source": "https://github.com/phpnomad/logger/tree/1.0.0"
+                "source": "https://github.com/phpnomad/logger/tree/1.1.0"
             },
-            "time": "2024-12-18T16:20:35+00:00"
+            "time": "2026-02-19T17:53:46+00:00"
         },
         {
             "name": "phpnomad/tests",
@@ -4788,10 +4788,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
